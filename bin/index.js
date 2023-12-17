@@ -10,13 +10,6 @@ program
   .description(package.description)
   .version(package.version);
 
-// program.command('current')
-//   .description('Shows the current weather')
-//   .argument('<city>', 'name of the desired city')
-//   .action(async (city) => {
-//     console.log(await currentTemperature(city));
-//   });
-
 program.command('temperature')
   .description('Shows temperature information according the parameters provided')
   .argument('<city>', 'Name of the desired city')
