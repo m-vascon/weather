@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const { Command } = require('commander');
 const program = new Command();
-const { currentTemperature } = require('../lib/index');
 const { temperatureSelector } = require('../lib/index');
 const package = require('../package.json');
 
