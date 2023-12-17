@@ -14,4 +14,4 @@ The geo coding data as well as the weather data is obtained from [Open-Meteo](ht
 weather temperature --current "city name"
 ```
 
-It will try to obtain the approximated coordinates by searching the name of the given city at the geo coding api of Open-Meteo, then it will use the latitude and longitude data to obtain the current temperature.
+It will try to obtain the approximated coordinates by searching the name of the given city at the geo coding api of Open-Meteo, then it will use the latitude and longitude data to obtain the current temperature using the weather api of Open-Meteo as well.
