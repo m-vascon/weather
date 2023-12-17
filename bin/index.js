@@ -1,17 +1,21 @@
 #!/usr/bin/env node
 const { Command } = require('commander');
 const program = new Command();
-const { currentTemperature } = require('../lib/index')
+const { currentTemperature } = require('../lib/index');
+const { temperatureSelector } = require('../lib/index');
+const package = require('../package.json');
 
 program
-  .name('weather')
-  .description('CLI to show the weather')
-  .version('0.1.0');
+  .name(package.name)
+  .description(package.description)
+  .version(package.version);
 
-program.command('current')
-  .description('Shows the current weather')
-  .action(async () => {
-    console.log(await currentTemperature());
-  });
+program.command('temperature')
+  .description('Shows temperature information according the parameters provided')
+  .argument('<city>', 'Name of the desired city. For cities which name has more than one word please use "" !')
+  .option('-c, --current', 'to obtain current information for this city')
+  .action(async (args, options) => {
+    console.log(await temperatureSelector(args, options));
+  })
 
 program.parse();
