@@ -1,6 +1,6 @@
 {
   "name": "weather",
-  "version": "0.3.2",
+  "version": "0.4.1",
   "description": "A simple CLI based on Node JS to show in the terminal weather information",
   "main": "bin/index.js",
   "type": "commonjs",

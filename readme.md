@@ -15,3 +15,15 @@ weather temperature --current "city name"
 ```
 
 It will try to obtain the approximated coordinates by searching the name of the given city at the geo coding api of Open-Meteo, then it will use the latitude and longitude data to obtain the current temperature using the weather api of Open-Meteo as well.
+
+- Hourly forecast: It can provide a 12 hour forecast of the temperature for a given city name
+
+```
+weather temperature --hourly "city name"
+```
+
+- Default behavior: It currently defaults to show the current temperature, subject to change soon
+
+```
+weather temperature "city name"
+```
