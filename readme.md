@@ -21,3 +21,9 @@ It will try to obtain the approximated coordinates by searching the name of the 
 ```
 weather temperature --hourly "city name"
 ```
+
+- Default behavior: It currently defaults to show the current temperature, subject to change soon
+
+```
+weather temperature "city name"
+```
